@@ -15,7 +15,7 @@ while(!validacionIntervalo) {
         var cotaSuperior = parseInt(prompt('Ingresa la cota superior'));
         isNaN(cotaSuperior) ? alert('Por favor, ingresa númerosidos para las cota SUPERIOR') : validacionCotaSuperior = true;
     }
-    if (cotaInferior > cotaSuperior) {
+    if (cotaInferior >= cotaSuperior) {
         alert('La cota inferior debe ser menor a la cota superior. Vuelva a ingresar una cota SUPERIOR');
         validacionCotaSuperior = false;
     } else { validacionIntervalo = true};
